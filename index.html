@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Clue</title>
+</head>
+<body>
+  <header id="top-header">
+    <h1 id="clue"><img src="imgs/clue-logo.png" alt=""></h1>
+    <div class="left-options">
+      <!-- <button class="players">
+        <i class="icon icon-settings"><img src="imgs/icon-settings.svg" alt="settings"></i>
+        Jugadores
+      </button> -->
+      <button class="refresh" onclick="refreshContent()">
+        <i class="icon icon-refresh"><img src="imgs/icon-refresh.svg" alt="refresh"></i>
+      </button>
+    </div>
+  </header>
+  <div id="tabs">
+    <button id="tab1" class="tab active">
+      <i class="icon"><img src="imgs/icon-persons.svg" alt="refresh"></i>
+      Sospechosos</button>
+    <button id="tab2" class="tab">
+      <i class="icon"><img src="imgs/icon-weapons.svg" alt="refresh"></i>
+      Armas</button>
+    <button id="tab3" class="tab">
+      <i class="icon"><img src="imgs/icon-places.svg" alt="refresh"></i>
+      Habitaciones</button>
+  </div>
+
+  <div id="tabs-container">
+    <div id="tab-content1" class="tabs-content active">
+      <ul></ul>
+    </div>
+    <div id="tab-content2" class="tabs-content">
+      <ul></ul>
+    </div>
+    <div id="tab-content3" class="tabs-content">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/functions.js">
+
+  </script>
+</body>
+</html>

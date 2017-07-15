@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body, * {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+#top-header {
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  #clue {
+    margin-left: 8px;
+  }
+  .left-options {
+    height: 48px;
+  }
+  .left-options button {
+    border: 0;
+    border-left: 1px solid #D8D8D8;
+    background: white;
+    height: 48px;
+    padding: 0 16px;
+    vertical-align: top;
+  }
+  .left-options .players {
+    font-size: 14px;
+  }
+#tabs {
+  position: fixed;
+  top: 48px;
+  width: 100%;
+  background: #333;
+  color: white;
+  display: flex;
+}
+  .tab {
+    flex-grow: 1;
+    color: white;
+    padding: 8px;
+    opacity: .4;
+    background: none;
+    border: 0;
+  }
+
+  .tab.active {
+    opacity: 1;
+  }
+    .tab .icon {
+      display: block;
+      text-align: center;
+    }
+
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+  .icon.icon-settings::before {
+
+  }
+
+#tabs-container {
+  padding-top: 106px;
+}
+.tabs-content {
+  display: none;
+}
+  .tabs-content.active {
+    display: block;
+  }
+  .tabs-content ul li{
+    height: 60px;
+    border-bottom: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .tabs-content ul li label{
+    font-size: 14px;
+    max-width: 40%;
+    font-weight: bold;
+  }
+
+    .tabs-content ul li .options select {
+      font-size: 13px;
+      margin-right: 8px;
+    }
+      .tabs-content ul li .options select.active {
+        color: #3574FF;
+        font-weight: bold;
+      }
+    .tabs-content ul li .options .button-sospecha {
+      background-color: #D8D8D8;
+      color: white;
+      height: 32px;
+      width: 32px;
+      border: 0;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+      .tabs-content ul li .options .button-sospecha.active {
+        background-color: #FFA500;
+      }
