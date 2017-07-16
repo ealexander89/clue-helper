@@ -81,7 +81,7 @@ function setTab($tab, $array) {
       $html += '</option>';
     });
 
-    $html += '<optgroup label="--------------------">';
+    $html += '<optgroup label="----------------------------------">';
     $players.forEach(function($player, $index) {
       $html += '<option>';
       $html += $player
