@@ -75,15 +75,13 @@ function setTab($tab, $array) {
     $html += '<div class="options">';
     $html += '<select>';
 
-    $html += '<optgroup label="Estados">';
     $options.forEach(function($option, $index) {
       $html += '<option>';
       $html += $option
       $html += '</option>';
     });
-    $html += '</optgroup>';
 
-    $html += '<optgroup label="Jugadores">';
+    $html += '<optgroup label="--------------------">';
     $players.forEach(function($player, $index) {
       $html += '<option>';
       $html += $player
